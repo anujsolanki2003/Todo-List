@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <h3 id="greet"></h3>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Search tasks...">
+            <button type="submit">Search</button>
+        </form>
+        <button id="logout">Logout</button>
+        <form id="todoForm">
+            <input type="text" id="task" placeholder="Task" required>
+            <input type="text" id="description" placeholder="Description">
+            <select id="status">
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <!-- Buttons for join operations -->
+        <button id="fetchTodosWithUser">GetAllTaskData</button>
+        <button id="fetchUsersWithTodos">combineData</button>
+        
+        <ul id="todoList"></ul>
+    </div>
+    <script src="todoapp.js"></script>
+</body>
+</html>
